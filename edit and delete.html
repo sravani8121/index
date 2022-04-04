@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Appointment App</title>
+</head>
+ 
+<body>
+    <h1>Appointment</h1>
+ 
+<input type="text" id="name">
+<input type="text" id="email">
+ 
+<button type="button" onclick="save();">save</button>
+ 
+<script>
+function save()
+{
+var name=document.getElementById("name").value;
+var email = document.getElementById("email").value;
+ 
+ localStorage.setItem("localname", name);
+  localStorage.setItem("localemail", email);
+ }
+ 
+</script>
+ 
+</body>
+</html>
